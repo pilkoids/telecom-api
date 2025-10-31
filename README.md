@@ -1,4 +1,4 @@
-# Telecom Cart Experience API - Grenville Eustace
+# Telecom Cart Experience API
 
 A thin Experience API that powers a telecom cart on top of a non-persistent Salesforce cart context. Built with TypeScript, Express, and layered architecture following clean code principles.
 
@@ -296,16 +296,7 @@ curl -X POST http://localhost:3000/cart
 # Response: {"id":"123...","contextId":"456...","items":[],"total":0,...}
 
 # 2. Add an item
-curl -X POST http://localhost:3000/cart/123.../item \
-  -H "Content-Type: application/json" \
-  -d '{
-    "id": "item-1",
-    "productId": "prod-phone-15",
-    "name": "iPhone 15",
-    "type": "phone",
-    "price": 999.99,
-    "quantity": 1
-  }'
+curl -X POST http://localhost:3000/cart/93ae7faf-f287-4659-9283-eaa98bc7d456/item \ -H "Content-Type: application/json" \ -d '{"id": "item-1","productId": "prod-phone-15","name": "iPhone 15","type": "phone","price": 999.99,"quantity": 1}'
 
 # 3. Get cart total
 curl http://localhost:3000/cart/123.../total
