@@ -1,4 +1,4 @@
-# Telecom Cart Experience API
+# Telecom Cart Experience API by Grenville Eustace for Motion Recruitment/Bell
 
 A thin Experience API that powers a telecom cart on top of a non-persistent Salesforce cart context. Built with TypeScript, Express, and layered architecture following clean code principles.
 
